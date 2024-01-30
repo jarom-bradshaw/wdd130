@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+a {
+    color: rebeccapurple
+
+}
+#second{
+    color:red;  
+    font-size: 64px;  
+    font-weight: bold;
+}
+.plain{
+    font-size: 32px;
+    background-color: yellow;
+    color: purple;
+}
+#last{
+    background-color: green;
+
+}
