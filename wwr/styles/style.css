@@ -1,4 +1,13 @@
-body{
-    
+:root
 
+links{
+    --headline-color-on-white: #2A9D8F;  /* headlines on a white background */ 
+    --headline-color-on-color: #103900; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #362C28; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: #362C28; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #D4FCC3  ;
+    --nav-link-color:  #362C28;
+    --nav-background-color: #D4FCC3;
+    --nav-hover-link-color: #362C28;
+    --nav-hover-background-color: #D4FCC3;
 }
