@@ -1,13 +1,92 @@
-:root
-
-links{
-    --headline-color-on-white: #2A9D8F;  /* headlines on a white background */ 
-    --headline-color-on-color: #103900; /* headlines on a colored background */ 
-    --paragraph-color-on-white: #362C28; /* paragraph text on a white background */ 
-    --paragraph-color-on-color: #362C28; /* paragraph text on a colored background */ 
-    --paragraph-background-color: #D4FCC3  ;
-    --nav-link-color:  #362C28;
-    --nav-background-color: #D4FCC3;
-    --nav-hover-link-color: #362C28;
-    --nav-hover-background-color: #D4FCC3;
+#content{
+    max-width: 1600px;
+    margin: auto
 }
+
+#nav a{
+    text-align: center;
+    color: #EDF5E1;
+    text-decoration: none;}
+#hero-msg h1{
+    text-align: center;
+}
+#hero-msg h4{
+    text-align: center;
+}
+#button-box{
+    text-align: center;
+}
+#main section{
+    text-align: center;
+}
+#background{
+    background-color: #dac2a4;
+    color: #EDF5E1;
+    height: 725px
+}
+body {
+    background-color: #fcfafb;
+    color: black;
+}
+header{
+    background-color: #586054;
+    color: #EDF5E1;
+}
+nav a:hover {
+    background-color: #EDF5E1;
+    color: #05386B;
+}
+.book {
+    background-color: #586054;
+    color: #EDF5E1;
+} 
+.join{
+    background-color: #586054;
+    color: #EDF5E1;
+
+}
+.book:hover{
+    background-color: #EDF5E1;
+    color: #05386B;
+}
+
+.join:hover{
+    background-color: white;
+    color: #586054;
+
+
+}
+.msg{
+    background-color: #586054;
+    color: #EDF5E1;
+}
+footer{
+    background-color: #586054;
+    color: #EDF5E1;
+    font-size: 1.2em;
+}
+footer p a:hover{
+    text-decoration: underline;
+}
+.logo{
+    width: 80px
+}
+
+.icon{
+    width: 80px
+}
+
+.links{
+    text-decoration: none;
+    
+}
+
+/* --headline-color-on-white: #05386B;  /* headlines on a white background */ 
+  /* --headline-color-on-color: #EDF5E1; /* headlines on a colored background */ 
+  /* --paragraph-color-on-white: #362C28; /* paragraph text on a white background */ 
+ /* --paragraph-color-on-color: #362C28; paragraph text on a colored background  
+  --paragraph-background-color: #D4FCC3  ;
+  --nav-link-color:  #white;
+  --nav-background-color: #05386B;
+  --nav-hover-link-color: #05386B;
+  --nav-hover-background-color: #white */
