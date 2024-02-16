@@ -1,0 +1,26 @@
+image{
+display: block;
+margin: 20px auto;
+width: ;
+padding: ;
+border: ;
+}
+
+p{
+border: 10px; color: solid black;
+/* display
+margin
+width padding 
+border
+border-radius
+text align
+ */
+
+padding: ;
+}
+body{
+    border: 50px;
+    padding: 40px;
+    background-color: azure;
+    margin-bottom: 400px;
+}
