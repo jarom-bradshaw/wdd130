@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    box-sizing: borderbox;
+    margin: 0;
+    padding: 0;
+    max-width: 300px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+body {
+    background-color: white;
+    font-family: 'Roboto  Slab', Times, Serif;
+}
+#header-content {
+    margin: 0;
+    border-radius: 10%;
+
+}
+#small-date-header {
+    color: #3f5b8b;
+
+}
+#header-text {
+
+}
+#grid-template-forpost-content {
+    display: grid;
+    grid-template-rows: 20px, 70px 1fr;
+}
+#post-content {
+    color: #8b808b;
+}
+
+#footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+    background-color: #3f5b8b;
+
+}
+
+#footer-numbers {
+    color: white;
+    text-decoration: none;
+}
+
+#uppercase-text {
+    text-transform: uppercase;
+    text-decoration: none;
+}
