@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2&family=Verdana&family=Geneva&family=Tahoma:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+    align-items: center;
+}
+
 :root{
     --primary_color: #4d5647;
     --primary_color-opacity: #4d564755;
@@ -18,6 +22,9 @@
        It only applies to that specifically if there is one exactly the same, 
        but an ul, it will not apply to that one.*/
 }
+main{
+    align-text: center;
+}
 body{
     background-color: #dac2a4;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -27,6 +34,8 @@ body{
 }
 h2{ margin: 0;
     padding-top: 10px;
+    align-items: center;
+    
 }
 #content{
     max-width: 1600px;
@@ -110,6 +119,7 @@ nav a:hover {
     transition: transform .5s;
     box-shadow: 5px 5px 10px #dac3a4;
     width: 100%;
+    max-width: 400px;
 }
 .card-img:hover {
     opacity: .6;
@@ -151,6 +161,7 @@ h4{
 .msg h2{
     color: #fcfafb;
     font-family: 'Fira Sans', sans-serif;
+    align-items: center;
     /* font-size: 22px; */
 }
 .msg p{
@@ -190,6 +201,7 @@ footer .social img {
 .icon{
     width: 80px;
     padding-top: 10px;
+    align-items: center;
 }
 .rivers-card, .camping-card, .rapids-card{
     margin: 200px 0;
