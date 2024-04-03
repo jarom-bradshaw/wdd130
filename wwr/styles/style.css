@@ -243,9 +243,57 @@ footer .social img {
     align-self: center;
 }
 
+/* This is the CSS for the subpage: RIVERS
+
+.rivers-grid is the class for the grid on the page
+.salmon-card
+.canyon-card
+.blog-card
+
+class subpage images
+*/
+.rivers-grid {
+    max-width: 2080px;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    
+}
+.salmon-card {
+    grid-column: 1/2;
+    text-align: center;
+}
+
+
+.canyon-card {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.blog-card {
+    grid-column: 3/4;
+    text-align: center;
+}
+
+.subpage-img{
+    align-items: center;
+    max-width: 100%;
+    margin: 1em;
+    padding: 1em;
+}
+.box-background{
+    /* display: grid;
+     /* 5 columns by three rows. *//*
+    grid-template-columns: 10% 35% 10% 35% 10%;
+    grid-template-rows: 20% 60% 20%; */
+}
+.box-img {
+    /* grid-column-start: ;
+    grid-row: ; */
+}
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .home-grid, .rivers-grid {
         display: block;
         height: auto;
     }
@@ -287,6 +335,8 @@ footer .social img {
         margin-top: 25px;
     }
 }
+
+
 /* --headline-color-on-white: #05386B;  /* headlines on a white background */ 
   /* --headline-color-on-color: #EDF5E1; /* headlines on a colored background */ 
   /* --paragraph-color-on-white: #362C28; /* paragraph text on a white background */ 

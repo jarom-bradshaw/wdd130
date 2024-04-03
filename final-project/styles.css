@@ -1,0 +1,197 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+/* To solve links being blue */
+a{
+    color: white;
+    text-decoration: none;
+}
+/* Color Palette */
+:root {
+    --primary-color: #242424;
+    --text-color: white;
+    --secondary-color: #ee2b2a;
+    --accent-color-1: #333333;
+    --accent-color-2: #b8bee3;
+    --nav-color: black;
+}
+
+/* Typography */
+body {
+    font-family: 'Noto Serif', serif;
+    background-color: var(--primary-color);
+    color: white;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--secondary-color);
+    padding: 1em;
+    display: grid; /* Changed from flex to grid */
+    grid-template-columns: auto 1fr auto; /* Three columns: logo, nav, social */
+    align-items: center;
+}
+
+header div, header nav {
+    display: grid; /* Add this line/or is it display contents */
+    align-items: center; /* Add this line */
+}
+
+header .social {
+    header .social {
+        justify-self: end; /*https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self: Aligns social icons to the end of the grid */
+    } 
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self */
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Home Button Styles */
+header a[href='index.html'] {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    padding: 10px 20px; /* Padding to increase the size */
+    border: none; /* No border */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Allow width and height */
+    margin: 4px 2px; /* Margin for spacing */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 0; /* Square corners */
+}
+
+/* Hover effect for the button */
+header a[href='index.html']:hover {
+    background-color: #f5f5f5; /* Slightly different shade on hover */
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+header nav a.home-button {
+    background-color: white;
+    color: var(--nav-color);
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+header nav a.home-button:hover,
+header nav a.home-button:focus {
+    background-color: var(--accent-color-2);
+}
+
+/* Main Content Styles */
+main {
+    display: grid; /* Tried flex, grid is 100x better */
+    grid-template-rows: auto; /* One row for each section */
+    gap: 2rem; /* rem is relative to the size of the root element*/
+    padding: 2rem;
+    background-color: var(--primary-color-1);
+}
+
+main #top-section {
+    display: grid; /* Changed from flex to grid */
+    grid-template-columns: 30% 1fr; /* Two columns: image and intro */
+    align-items: center;
+    gap: 20px; /* This maintains the distance between the image and the intro */
+}
+
+#top-section{
+    background-color: var(--accent-color-1);
+}
+main #top-section img {
+    width: 30%; /* Adjust as needed */
+    height: auto;
+    margin-right: 20px;
+}
+
+main #top-section #intro {
+    width: 70%; /* Adjust as needed */
+    padding: 1rem;
+    /* background-color: white; nah this is ugly*/
+    color: var(--text-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 5em;
+}
+
+#img-logo{
+    width:20%; 
+    /* This code is not working */
+    margin: 3em;
+}
+/* Additional Images Section */
+section#new-style-websites {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); /* minimum column size of 30% */
+    gap: 1rem;                       /*auto-fit automates it and sets a minimum column value of 30%  */
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+section#new-style-websites a {
+    width: 30%; /* Adjust as needed */
+    margin: 0.5rem;
+    text-align: center;
+}
+
+section#new-style-websites img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+.images-for-news{
+    max-height: 200px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .social {
+    margin: 1rem 0;
+}
+
+.social img {
+    width: 24px;
+    margin:6px;
+    height: auto;
+}
+
+footer .linksbottom {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr; /* Stacks everything in one column on small screens */
+    }
+
+    main #top-section,
+    section#new-style-websites {
+        grid-template-columns: 1fr; /* Stacks images and intro in one column on small screens */
+    }
+}
