@@ -38,7 +38,7 @@ header {
     background-color: var(--secondary-color);
     padding: 1em;
     display: grid; /* Changed from flex to grid */
-    grid-template-columns: auto 1fr auto; /* Three columns: logo, nav, social */
+    grid-template-columns: auto 2fr 1fr auto; /* Three columns: logo, space between logo and nav, nav, social */
     align-items: center;
 }
 
@@ -102,9 +102,10 @@ header nav a.home-button:focus {
 main {
     display: grid; /* Tried flex, grid is 100x better */
     grid-template-rows: auto; /* One row for each section */
-    gap: 2rem; /* rem is relative to the size of the root element*/
+    gap: 2rem; /* gappp rem is relative to the size of the root element*/
     padding: 2rem;
     background-color: var(--primary-color-1);
+    overflow: auto; /* TO SOLVE THE PROBLEM OF IMAGES GOING DOWN  */
 }
 
 main #top-section {
@@ -140,14 +141,14 @@ main #top-section #intro {
 /* Additional Images Section */
 section#new-style-websites {
     display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr)); /* minimum column size of 30% */
+    grid-template-columns: repeat(2, minmax(40%, 1fr)); /* minimum column size of 30% */
     gap: 1rem;                       /*auto-fit automates it and sets a minimum column value of 30%  */
     padding: 1rem;
     margin-top: 2rem;
 }
 
 section#new-style-websites a {
-    width: 30%; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
     margin: 0.5rem;
     text-align: center;
 }
@@ -163,7 +164,7 @@ section#new-style-websites img {
 
 /* Footer Styles */
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--s);
     color: var(--text-color);
     text-align: center;
     padding: 1rem 0;
