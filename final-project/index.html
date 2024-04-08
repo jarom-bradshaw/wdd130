@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jarom Bradshaw - Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css"> 
-
+</head>
 <body>
     <header>
-        <div>
-            <a href="index.html">Home</a> 
-            <!-- Do not use button/ mega ugly / use css -->
-            <a href="projects.html">Projects</a>
-            <a href="contact_me.html">Contact Me</a>
-            <div class="social">
+        <div class="header-container">
+            <a href="index.html" class="home-link">Home</a> 
+            <!-- button looks ugly not like siteframe -->
+            <div class="navigation-links">
+                <a id="projects-link" href="projects.html">Projects</a>
+                <a class="contact-link" href="contact_me.html">Contact Me</a>
+            </div>
+            <div class="social-links">
                 <a href="https://github.com/jarom-bradshaw/jarom-bradshaw/blob/cc18aa7ae876345a1d31220fcef4f77a9b98f8e7/README.md" target="_blank">
                     <img src="images/github-mark-white.png" alt="github icon">
                 </a>
@@ -34,14 +36,14 @@
     </header>
 
     <main>
-        <section id="top-section">
-            <img id="img-logo" src="images/logo.png" alt="JB logo">
-            <section id="intro">
+        <section id="intro-section">
+            <img id="logo-image" src="images/logo.png" alt="JB logo">
+            <section id="intro-text">
                 <h1>Hi there! My name is Jarom Bradshaw, a CS major student at BYU-I.</h1>
                 <p>On my portfolio website, I will be sharing my principles on coding, relevant experience, and projects I have included. I will also include some blog posts. Join me on my road to achievement as a software developer!</p>
             </section>
         </section>
-        <section id="new-style-websites">
+        <section id="news-style-websites">
         <a class="images-for-news" href="resume.html">Resume
             <img src="images/personal-coding-example.jpg" alt="Personal coding">
         </a>
@@ -58,9 +60,9 @@
 
     <footer>
         <p>Personal Portfolio &copy; 2023 - Jarom Bradshaw</p>
-        <p><a class="linksbottom" href="site-plan-personal.html">Site Plan</a></p>
-        <p><a class="linksbottom" href="contactus.html">Contact Us</a></p>
-        <div class="social">
+        <p><a class="footer-link" href="site-plan-personal.html">Site Plan</a></p>
+        <p><a class="footer-link" href="contactus.html">Contact Us</a></p>
+        <div class="social-links">
             <a href="https://github.com/jarom-bradshaw/jarom-bradshaw/blob/cc18aa7ae876345a1d31220fcef4f77a9b98f8e7/README.md" target="_blank">
                 <img src="images/github-mark-white.png" alt="github icon">
             </a>

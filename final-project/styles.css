@@ -1,198 +1,168 @@
-/* Reset Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    align-items: center;
 }
-
-/* To solve links being blue */
 a{
-    color: white;
     text-decoration: none;
+    color: white;
 }
-/* Color Palette */
-:root {
-    --primary-color: #242424;
-    --text-color: white;
-    --secondary-color: #ee2b2a;
-    --accent-color-1: #333333;
-    --accent-color-2: #b8bee3;
-    --nav-color: black;
-}
-
-/* Typography */
-body {
+index.html body {
     font-family: 'Noto Serif', serif;
-    background-color: var(--primary-color);
+    background-color: #242424;
     color: white;
     line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Fira Sans', sans-serif;
-}
-
-/* Header Styles */
 header {
-    background-color: var(--secondary-color);
+    background-color: #ee2b2a;
     padding: 1em;
-    display: grid; /* Changed from flex to grid */
-    grid-template-columns: auto 2fr 1fr auto; /* Three columns: logo, space between logo and nav, nav, social */
-    align-items: center;
-}
-
-header div, header nav {
-    display: grid; /* Add this line/or is it display contents */
-    align-items: center; /* Add this line */
-}
-
-header .social {
-    header .social {
-        justify-self: end; /*https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self: Aligns social icons to the end of the grid */
-    } 
-    /* https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self */
-}
-
-
-header nav {
-    display: flex;
+    display: flex; 
     justify-content: space-between;
     align-items: center;
 }
-/* Home Button Styles */
+
 header a[href='index.html'] {
-    background-color: white; /* White background */
-    color: black; /* Black text */
-    padding: 10px 20px; /* Padding to increase the size */
-    border: none; /* No border */
-    text-align: center; /* Center the text */
-    text-decoration: none; /* Remove underline */
-    display: inline-block; /* Allow width and height */
-    margin: 4px 2px; /* Margin for spacing */
-    cursor: pointer; /* Pointer cursor on hover */
-    border-radius: 0; /* Square corners */
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 0;
 }
 
-/* Hover effect for the button */
-header a[href='index.html']:hover {
-    background-color: #f5f5f5; /* Slightly different shade on hover */
-}
-
-header nav a {
+header .navigation-links a {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
 
-header nav a.home-button {
+header .navigation-links a.home-button {
     background-color: white;
-    color: var(--nav-color);
+    color: black;
     border-radius: 4px;
     padding: 10px 20px;
     cursor: pointer;
 }
 
-header nav a.home-button:hover,
-header nav a.home-button:focus {
-    background-color: var(--accent-color-2);
+header .navigation-links a.home-button:hover,
+header .navigation-links a.home-button:focus {
+    background-color: #b8bee3;
 }
-
-/* Main Content Styles */
-main {
-    display: grid; /* Tried flex, grid is 100x better */
-    grid-template-rows: auto; /* One row for each section */
-    gap: 2rem; /* gappp rem is relative to the size of the root element*/
-    padding: 2rem;
-    background-color: var(--primary-color-1);
-    overflow: auto; /* TO SOLVE THE PROBLEM OF IMAGES GOING DOWN  */
-}
-
-main #top-section {
-    display: grid; /* Changed from flex to grid */
-    grid-template-columns: 30% 1fr; /* Two columns: image and intro */
+header .header-container {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px; /* This maintains the distance between the image and the intro */
 }
 
-#top-section{
-    background-color: var(--accent-color-1);
+
+main {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #242424;
+    overflow: auto;
 }
-main #top-section img {
-    width: 30%; /* Adjust as needed */
+
+main #intro-section {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+main #intro-section #logo-image {
+    width: 70%;
     height: auto;
-    margin-right: 20px;
+    margin-left: auto;
 }
 
-main #top-section #intro {
-    width: 70%; /* Adjust as needed */
+main #intro-section #intro-text {
+    width: 70%;
     padding: 1rem;
-    /* background-color: white; nah this is ugly*/
-    color: var(--text-color);
+    color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 5em;
 }
 
-#img-logo{
-    width:20%; 
-    /* This code is not working */
-    margin: 3em;
-}
-/* Additional Images Section */
-section#new-style-websites {
-    display: grid; 
-    grid-template-columns: repeat(2, minmax(40%, 1fr)); /* minimum column size of 30% */
-    gap: 1rem;                       /*auto-fit automates it and sets a minimum column value of 30%  */
+section#news-style-websites {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(40%, 1fr));
+    gap: 1rem;
     padding: 1rem;
     margin-top: 2rem;
 }
 
-section#new-style-websites a {
-    width: 100%; /* Adjust as needed */
+section#news-style-websites a.images-for-news {
+    width: 100%;
     margin: 0.5rem;
     text-align: center;
+    position: relative; /* Added for text overlay */
 }
 
-section#new-style-websites img {
+section#news-style-websites img {
     width: 100%;
     height: auto;
     margin-bottom: 0.5rem;
 }
-.images-for-news{
-    max-height: 200px;
+
+section#news-style-websites a.images-for-news::after  {
+    content: attr(href); /* Fetches the text from the href attribute */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%; /* Covers the bottom 30% of the image */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
 }
 
-/* Footer Styles */
+
+
 footer {
-    background-color: var(--s);
-    color: var(--text-color);
+    background-color: #ee2b2a;
+    color: white;
     text-align: center;
     padding: 1rem 0;
 }
 
-footer .social {
-    margin: 1rem 0;
+footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.social img {
-    width: 24px;
+.social-links {
+    margin: 1rem 0;
+    display: flex; /* Changed from block to flex for horizontal alignment */
+    justify-content: center; /* Centers the items horizontally */
+}
+
+.social-links img {
+    max-width: 24px;
     margin:6px;
     height: auto;
 }
 
-footer .linksbottom {
-    color: var(--text-color);
+footer .footer-link {
+    color: white;
     text-decoration: none;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     header {
-        grid-template-columns: 1fr; /* Stacks everything in one column on small screens */
+        flex-direction: column; /* Stacks items vertically on small screens */
     }
 
     main #top-section,
     section#new-style-websites {
-        grid-template-columns: 1fr; /* Stacks images and intro in one column on small screens */
+        grid-template-columns: 1fr;
     }
 }
