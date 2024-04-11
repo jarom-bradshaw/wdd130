@@ -513,8 +513,6 @@ section#news-style-websites a.images-for-news::after  {
   #relevant-experience ul {
     list-style-type: disc;
     margin-left: 20px;
-  }
-  ;
     padding: 1em;
     display: flex; 
     justify-content: space-between;
